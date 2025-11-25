@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="unipar.br.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <VBox>
+        <children>
+            <Label text="NUMERO 1"/>
+            <TextField fx:id="Number1"/>
+        </children>
+    </VBox>
+    <VBox>
+        <children>
+            <Label text="NUMERO 2"/>
+            <TextField fx:id="Number2"/>
+        </children>
+    </VBox>
+    <HBox alignment="CENTER">
+        <Button text="*" onAction="#vezes"/>
+        <Separator/>
+        <Button text="/" onAction="#divisao"/>
+        <Separator/>
+        <Button text="-" onAction="#menos"/>
+        <Separator/>
+        <Button text="+" onAction="#soma"/>
+    </HBox>
+    <VBox>
+        <Label fx:id="ShowResult" text="" />
+    </VBox>
+</VBox>
