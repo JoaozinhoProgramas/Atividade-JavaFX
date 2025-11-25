@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ChoiceBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <VBox>
+        <Label text="Nome"/>
+        <TextField fx:id="Name"/>
+    </VBox>
+    <VBox>
+        <Label text="Idade"/>
+        <TextField fx:id="Age"/>
+    </VBox>
+    <VBox alignment="CENTER">
+        <Label text="Sexo"/>
+        <HBox alignment="CENTER">
+            <ChoiceBox fx:id="Choice" />
+        </HBox>
+    </VBox>
+    <VBox alignment="CENTER">
+        <Label text="Gosta de praticar esporte?"/>
+        <HBox alignment="CENTER">
+            <CheckBox fx:id="Sports" text="Sim"/>
+            <Separator maxWidth="150.0"/>
+            <CheckBox text="Não"/>
+        </HBox>
+    </VBox>
+    <Button onAction="#onButtonClick" text="ANALISAR"/>
+    <VBox alignment="CENTER_LEFT">
+        <Label text="Cadastro:"/>
+        <Label fx:id="ShowName" text="Ainda não temos ninguem cadastrado"/>
+        <Label fx:id="ShowAge"/>
+        <Label fx:id="ShowSports"/>
+        <Label fx:id="ShowGender"/>
+    </VBox>
+
+
+</VBox>
