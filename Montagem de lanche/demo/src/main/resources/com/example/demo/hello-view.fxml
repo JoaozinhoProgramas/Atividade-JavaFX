@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+    <Label text="Lanchonete" />
+    <VBox>
+        <Label text="Tipo de pão" />
+        <ComboBox fx:id="ComboBoxChoice" />
+    </VBox>
+    <VBox>
+        <Label text="Tipo de carne" />
+        <RadioButton fx:id="radioButton1" text="Frango" />
+        <RadioButton fx:id="radioButton2" text="Bovina" />
+        <RadioButton fx:id="radioButton3" text="Soja" />
+    </VBox>
+    <VBox>
+        <Label text="Acompanhamentos" />
+        <CheckBox fx:id="CheckBox1" text="queijo" />
+        <CheckBox fx:id="CheckBox2" text="bacon" />
+        <CheckBox fx:id="CheckBox3" text="salada" />
+        <CheckBox fx:id="CheckBox4" text="molho" />
+    </VBox>
+    <VBox>
+        <Label text="Nome do cliente" />
+        <TextField fx:id="Name"/>
+    </VBox>
+    <VBox>
+        <Button onAction="#OnClick" text="Anotar pedido"/>
+        <VBox alignment="CENTER">
+            <Label fx:id="ClientName"/>
+            <Label fx:id="Bread"/>
+            <Label fx:id="MeatChoice"/>
+            <Label fx:id="ResultAcom0" text="Ainda não há pedidos"/>
+            <Label fx:id="ResultAcom1"/>
+            <Label fx:id="ResultAcom2"/>
+            <Label fx:id="ResultAcom3"/>
+            <Label fx:id="ResultAcom4"/>
+        </VBox>
+    </VBox>
+</VBox>
